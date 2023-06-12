@@ -1,0 +1,25 @@
+# when
+When a partial native EPS security context is taken into use through a security mode control procedure, the MME and the UE shall delete the previously current EPS security context.
+The EPS security context is taken into use by the UE and the MME, when the MME initiates a security mode control procedure or during the inter-system handover procedure from A/Gb mode to S1 mode or Iu mode to S1 mode.
+When the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services, the MME and the UE shall delete the previous current EPS security context.
+A partial native EPS security context is established in the UE and the network when an EPS authentication is successfully performed.
+Except for the CONTROL PLANE SERVICE REQUEST message including an ESM message container information element or a NAS message container information element, the UE shall start the ciphering and deciphering of NAS messages when the secure exchange of NAS messages has been established for a NAS signalling connection.
+
+# once
+Once the encryption of NAS messages has been started between the MME and the UE, the receiver shall not discard the unciphered NAS messages which shall have been ciphered according to the rules described in this specification.
+
+# if
+If the attach attempt counter is equal to 5, the UE shall delete any GUTI, TAI list, last visited registered TAI, list of equivalent PLMNs and KSI, shall set the update status to EU2 NOT UPDATED, and shall start timer T3402.
+If the SECURITY MODE COMMAND message can be accepted, the UE shall send a SECURITY MODE COMPLETE message integrity protected with the selected NAS integrity algorithm and the EPS NAS integrity key based on the KASME or mapped K'ASME if the type of security context flag is set to "mapped security context" indicated by the eKSI.
+If the SECURITY MODE COMMAND message can be accepted, the UE shall take the EPS security context indicated in the message into use.
+
+# by
+The MME initiates the NAS security mode control procedure by sending a SECURITY MODE COMMAND message to the UE and starting timer T3460.
+The network initiates the authentication procedure by sending an AUTHENTICATION REQUEST message to the UE and starting the timer T3460.
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME during the attach procedure by initiating a security mode control procedure.
+In state EMM-DEREGISTERED, the UE initiates the attach procedure by sending an ATTACH REQUEST message to the MME, starting timer T3410 and entering state EMM-REGISTERED-INITIATED.
+
+# upon
+Upon expiry of timer T3247, the UE shall initiate an EPS attach procedure or tracking area updating procedure, if still needed, dependent on EMM state and EPS update status, or perform PLMN selection according to 3GPP TS 23.122.
+If the attach request is neither for emergency bearer services nor for initiating a PDN connection for emergency bearer services with attach type not set to "EPS emergency attach", upon reception of the EMM causes #95, #96, #97, #99 and #111 the UE should set the attach attempt counter to 5.
+

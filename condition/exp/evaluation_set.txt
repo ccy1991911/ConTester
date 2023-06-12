@@ -1,0 +1,48 @@
+2
+a partial native EPS security context is taken into use through a security mode control procedure
+The EPS security context is taken into use by the UE and the MME
+3
+The EPS security context is taken into use by the UE and the MME
+a partial native EPS security context is taken into use through a security mode control procedure
+1
+the MME initiates a security mode control procedure
+The MME initiates the NAS security mode control procedure
+3
+the UE shall take the EPS security context indicated in the message into use.
+a partial native EPS security context is taken into use through a security mode control procedure
+2
+a partial native EPS security context is taken into use through a security mode control procedure
+the UE shall take the EPS security context indicated in the message into use.
+2
+A partial native EPS security context is established in the UE and the network
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+3
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+A partial native EPS security context is established in the UE and the network
+1
+an EPS authentication is successfully performed
+The network initiates the authentication procedure
+1
+the network has established secure exchange of NAS messages for the NAS signalling connection
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME
+1
+initiating a security mode control procedure
+The MME initiates the NAS security mode control procedure
+1
+the encryption of NAS messages has been started between the MME and the UE
+the UE shall start the ciphering and deciphering of NAS messages
+1
+the secure exchange of NAS messages has been established for a NAS signalling connection
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME
+1
+The UE shall initiate an attach
+the UE initiates the attach procedure
+1
+the attach attempt counter is equal to 5
+the UE should set the attach attempt counter to 5
+1
+the UE shall initiate an EPS attach procedure
+the UE initiates the attach procedure
+1
+The UE shall accept a SECURITY MODE COMMAND message
+the SECURITY MODE COMMAND message can be accepted
