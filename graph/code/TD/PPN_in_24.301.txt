@@ -1,0 +1,253 @@
+1x CS fallback capable UE
+5G-EA
+5G-IA
+Aggregate maximum bit rate
+APN based congestion control
+Attached for emergency bearer services
+Attached for access to RLOS
+Chosen PLMN
+Control plane CIoT EPS optimization
+User plane CIoT EPS optimization
+UE supporting CIoT EPS optimizations
+Attached for EPS services with CP-CIoT EPS optimization
+Attached for EPS services with User plane CIoT EPS optimization
+Attached for EPS services with CIoT EPS optimization
+CS fallback cancellation request
+CS fallback capable UE
+CSG cell
+CSG ID
+CSG selection
+Dedicated bearer
+Default bearer
+Emergency EPS bearer context
+EMM context
+EMM cause
+ESM cause
+EMM-CONNECTED mode
+EMM-IDLE mode
+EPS security context
+EPS services
+Evolved packet core network
+Evolved packet system
+GBR bearer
+General NAS level mobility management congestion control
+Group specific session management congestion control
+Highest ranked ACDC category
+Initial NAS message
+IPv4v6 capability
+Kilobit
+Last Visited Registered TAI
+Linked Bearer Identity
+LIPA PDN connection
+Lower layer failure
+Mapped EPS security context
+Mapped GUTI
+Megabit
+Message header
+MME area
+MO MMTEL voice call is started
+MO MMTEL video call is started
+MO SMSoIP is started
+NAS level mobility management congestion control
+NAS signalling connection
+NAS signalling connection recovery
+Native GUTI
+Non-access stratum protocols
+Non-emergency EPS bearer context
+Non-EPS services
+Non-GBR bearer
+PDN address
+PDN connection for emergency bearer services
+PDN connection for RLOS
+Plain NAS message
+Persistent EPS bearer context
+Procedure Transaction Identity
+RAT-related TMSI
+Registered PLMN
+Relay node
+Removal of eCall only mode restriction
+RLOS EPS bearer context
+In NB-S1 mode
+In WB-S1 mode
+In WB-S1/CE mode
+SCEF PDN Connection
+SGi PDN Connection
+S101 mode
+SIPTO at the local network PDN connection
+SIPTO at the local network PDN connection with a collocated L-GW
+SIPTO at the local network PDN connection with a stand-alone GW
+"SMS only"
+SMS over NAS
+SMS over S102
+Subscribed APN based congestion control
+TAI list
+Traffic flow aggregate
+UE configured for dual priority
+UE configured to use AC11 – 15 in selected PLMN
+UE's availability for voice calls in the IMS
+UE's usage setting
+UE using EPS services with control plane CIoT EPS optimization
+Restricted local operator services
+APN rate control status
+Cellular IoT
+DCN-ID
+eCall only mode
+NarrowBand-IoT
+Dedicated core network
+PDN connection
+Service Gap Control
+UE paging probability information
+CS fallback
+SMS in MME
+SMS over SGs
+SCEF
+A/Gb mode
+Access domain selection
+Default PDP context
+Extended idle-mode DRX cycle
+Iu mode
+Power saving mode
+PS signalling connection
+RR connection
+TFT
+UMTS security context
+Current EPS security context
+Full native EPS security context
+KASME
+K'ASME
+Mapped security context
+Native EPS security context
+Non-current EPS security context
+Partial native EPS security context
+Data via MME
+Country
+EHPLMN
+HPLMN
+Shared Network
+Suitable Cell
+VPLMN
+Limited Service State
+SRVCC
+vSRVCC
+Extended Access Barring
+Application specific Congestion control for Data Communication
+Local Home Network Identifier
+ProSe direct communication
+ProSe direct discovery
+ProSe UE-to-Network Relay
+Multi-access PDN connection
+NBIFOM
+eCall over IMS
+5GMM-CONNECTED mode
+5GMM-DEREGISTERED
+5GMM-DEREGISTERED-INITIATED
+5GMM-IDLE mode
+5GMM-NULL
+5GMM-REGISTERED
+5GMM-REGISTERED-INITIATED
+5GMM-SERVICE-REQUEST-INITIATED
+Applicable UE radio capability ID for the current UE radio configuration in the selected network
+Control plane CIoT 5GS optimization
+N1 mode
+NB-N1 mode
+UE operating in single-registration mode in a network supporting N26 interface User plane CIoT 5GS optimization
+5G-Globally Unique Temporary Identifier
+5GS Mobility Management
+5G System
+Application specific Congestion control for Data Communication
+Authentication and Key Agreement
+Aggregate Maximum Bit Rate
+Access Point Name
+APN Aggregate Maximum Bit Rate
+Allocation Retention Priority
+Bearer Control Mode
+Cellular IoT
+Control Plane CIoT
+Control Plane EDTCSG Closed Subscriber Group
+Evolved Universal Terrestrial Radio Access
+Evolved Universal Terrestrial Radio Access Network
+Extended Access Barring
+EPS Connection Management
+Extended idle-mode DRX cycle
+Early Data Transmission
+Extended Emergency Number List Validity
+Key Set Identifier for E-UTRAN
+EPS Mobility Management
+Evolved Node B
+Evolved Packet Core Network
+Evolved Packet System
+EPS Session Management
+Guaranteed Bit Rate
+Globally Unique MME Identifier
+Globally Unique Temporary Identifier
+Home eNode B
+High Rate Packet Data
+Internet of Things
+IP-Connectivity Access Network
+Idle mode Signalling Reduction
+Kilobits per second
+Key Set Identifier
+Local PDN Gateway
+Local Home Network Identifier
+Local IP Access
+M-Temporary Mobile Subscriber Identity
+Megabits per second
+Maximum Bit Rate
+Mobility Management Entity
+MME Code
+Mobile Terminated-Early Data Transmission
+Narrowband IoT
+New Radio
+Network Slice Selection Assistance Information
+Protocol Discriminator
+Packet Data Network Gateway
+Proximity-based Services
+Power Saving Mode
+Procedure Transaction Identity
+QoS Class Identifier
+Quality of Service
+Radio Capability Signalling Optimisation
+Restricted Local Operator Services
+RObust Header Compression
+Radio Resource Control
+Single NSSAI
+S-Temporary Mobile Subscriber Identity
+S101 Application Protocol
+S1 Application Protocol
+System Architecture Evolution
+Service Capability Exposure Function
+Service Gap Control
+Selected IP Traffic Offload
+Tracking Area
+Tracking Area Code
+Tracking Area Identity
+Traffic Flow Template
+Transaction Identifier
+Temporary Identity used in Next update
+Uniform Resource Name
+Vehicle-to-Everything
+Wake-Up Signal
+Secure exchange
+secure exchange
+attach attempt counter
+timer T3247
+timer T3410
+selected cell
+attach procedure
+EPS attach
+NAS attach
+detach procedure
+EPS detach
+NAS detach
+tracking area updating procedure
+EPS tracking area updating
+NAS tracking area updating
+security mode control procedure
+EPS security mode control
+NAS security mode control
+service request procedure
+EPS service request
+NAS service request
+paging procedure
+EPS paging
+NAS paging

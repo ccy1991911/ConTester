@@ -1,0 +1,1098 @@
+0
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+the UE not receive a DRX parameter in the Negotiated DRX parameter in NB-S1 mode IE
+0
+the UE not receive a DRX parameter in the Negotiated DRX parameter in NB-S1 mode IE
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+0
+the encryption of NAS messages has been started between the MME and the UE
+The network initiates the procedure
+0
+The network initiates the procedure
+the encryption of NAS messages has been started between the MME and the UE
+0
+a current EPS security context exists
+The EPS security context is taken into use by the UE and the MME
+0
+The EPS security context is taken into use by the UE and the MME
+a current EPS security context exists
+0
+The UE shall accept a SECURITY MODE COMMAND message
+the security mode control procedure is initiated
+0
+the security mode control procedure is initiated
+The UE shall accept a SECURITY MODE COMMAND message
+0
+starting timer T3460
+the UE shall keep both timer T3412 and timer T3312
+0
+the UE shall keep both timer T3412 and timer T3312
+starting timer T3460
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+The UPLINK GENERIC NAS TRANSPORT message can sent
+0
+The UPLINK GENERIC NAS TRANSPORT message can sent
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+0
+A temporary aggregate of packet filters that inserted into a traffic flow template for an EPS bearer context by the network
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+A temporary aggregate of packet filters that inserted into a traffic flow template for an EPS bearer context by the network
+0
+replying with a NAS message that is integrity protected and ciphered using the current EPS security context
+all NAS messages exchanged between the UE and the MME are sent integrity protected
+0
+all NAS messages exchanged between the UE and the MME are sent integrity protected
+replying with a NAS message that is integrity protected and ciphered using the current EPS security context
+0
+the UE shall initiate an EPS attach procedure
+Subsequently the UE may send the ATTACH REQUEST message
+0
+Subsequently the UE may send the ATTACH REQUEST message
+the UE shall initiate an EPS attach procedure
+0
+an EPS authentication is successfully performed
+the UE shall send the AUTHENTICATION RESPONSE message to the network
+0
+the UE shall send the AUTHENTICATION RESPONSE message to the network
+an EPS authentication is successfully performed
+0
+The UE shall if accepted create a locally generated KASME
+the UE holds a valid P-TMSI signature , P-TMSI and RAI
+0
+the UE holds a valid P-TMSI signature , P-TMSI and RAI
+The UE shall if accepted create a locally generated KASME
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+means of barring their access class
+0
+means of barring their access class
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+the UE shall initiate an EPS attach procedure
+the UE may detach locally
+0
+the UE may detach locally
+the UE shall initiate an EPS attach procedure
+0
+the attach attempt counter is equal to 5
+For the cases b , c , d , l when the " Extended wait time " is ignored , and la when the " Extended wait time CP data " is ignored the attach attempt counter shall incremented unless it was already set to 5
+0
+For the cases b , c , d , l when the " Extended wait time " is ignored , and la when the " Extended wait time CP data " is ignored the attach attempt counter shall incremented unless it was already set to 5
+the attach attempt counter is equal to 5
+0
+the UE shall initiate an EPS attach procedure
+the UE shall perform a combined attach procedure
+0
+the UE shall perform a combined attach procedure
+the UE shall initiate an EPS attach procedure
+0
+The MME takes this context into use
+the MME shall re-establish the radio and S1 bearers for all active EPS bearer contexts
+0
+the MME shall re-establish the radio and S1 bearers for all active EPS bearer contexts
+The MME takes this context into use
+0
+then the UE shall set the ProSe bit to " ProSe supported "
+and only if the UE supports
+0
+and only if the UE supports
+then the UE shall set the ProSe bit to " ProSe supported "
+0
+initiating a security mode control procedure
+the UE shall take the EPS security context indicated in the message into use.
+0
+the UE shall take the EPS security context indicated in the message into use.
+initiating a security mode control procedure
+0
+The UE shall mark the EPS security context on the USIM or in the non-volatile memory as invalid
+A partial native EPS security context is established in the UE and the network
+0
+A partial native EPS security context is established in the UE and the network
+The UE shall mark the EPS security context on the USIM or in the non-volatile memory as invalid
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+The secure exchange of NAS messages shall continued
+0
+The secure exchange of NAS messages shall continued
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+0
+initiating a security mode control procedure
+A partial native EPS security context is established in the UE and the network
+0
+A partial native EPS security context is established in the UE and the network
+initiating a security mode control procedure
+0
+the UE shall take the EPS security context indicated in the message into use
+the current EPS security context is a mapped EPS security context
+0
+the current EPS security context is a mapped EPS security context
+the UE shall take the EPS security context indicated in the message into use
+0
+The UE shall initiate an EPS attach procedure
+the attach procedure is for emergency bearer services
+0
+the attach procedure is for emergency bearer services
+The UE shall initiate an EPS attach procedure
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+the UE shall take the non-current native EPS security context into use
+0
+the UE shall take the non-current native EPS security context into use
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+A partial native EPS security context is established in the UE and the network
+the UE initiates the attach procedure
+0
+the UE initiates the attach procedure
+A partial native EPS security context is established in the UE and the network
+0
+The UE shall initiate an attach
+The network initiates the authentication procedure
+0
+The network initiates the authentication procedure
+The UE shall initiate an attach
+0
+the UE shall initiate an EPS attach procedure
+the UE should set the attach attempt counter
+0
+the UE should set the attach attempt counter
+the UE shall initiate an EPS attach procedure
+0
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+the UE supports
+0
+the UE supports
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+0
+the UE shall start the ciphering and deciphering of NAS messages
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME
+0
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME
+the UE shall start the ciphering and deciphering of NAS messages
+0
+the UE shall initiate an EPS attach procedure
+Otherwise the procedure completed
+0
+Otherwise the procedure completed
+the UE shall initiate an EPS attach procedure
+0
+Secure exchange of NAS messages re-established in the UE
+the encryption of NAS messages has been started between the MME and the UE
+0
+the encryption of NAS messages has been started between the MME and the UE
+Secure exchange of NAS messages re-established in the UE
+0
+the UE shall map the P-TMSI and RAI into the EPS mobile identity IE
+the UE holds a valid last visited registered TAI
+0
+the UE holds a valid last visited registered TAI
+the UE shall map the P-TMSI and RAI into the EPS mobile identity IE
+0
+the UE shall initiate an EPS attach procedure
+The network initiates the procedure
+0
+The network initiates the procedure
+the UE shall initiate an EPS attach procedure
+0
+the UE shall initiate an EPS attach procedure
+This is done
+0
+This is done
+the UE shall initiate an EPS attach procedure
+0
+The UE shall initiate an EPS attach procedure
+the UE requests the use of eDRX
+0
+the UE requests the use of eDRX
+The UE shall initiate an EPS attach procedure
+0
+The UE shall initiate an EPS attach procedure
+a NAS signalling connection has been established between the UE and the network
+0
+a NAS signalling connection has been established between the UE and the network
+The UE shall initiate an EPS attach procedure
+0
+The UE shall initiate an attach
+attached to the network
+0
+attached to the network
+The UE shall initiate an attach
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+secure exchange of NAS messages is triggered by the indication from the lower layers that the user plane radio bearers are successfully set up
+0
+secure exchange of NAS messages is triggered by the indication from the lower layers that the user plane radio bearers are successfully set up
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+0
+the UE not included a valid eKSI in the NAS Key Set Identifier IE
+In the present document the UE shall consider also the associated keys KASME or K'ASME , EPS NAS ciphering key and EPS NAS integrity key invalid
+0
+In the present document the UE shall consider also the associated keys KASME or K'ASME , EPS NAS ciphering key and EPS NAS integrity key invalid
+the UE not included a valid eKSI in the NAS Key Set Identifier IE
+0
+an EPS authentication is successfully performed
+the network response depends upon the type of identity used by the UE in the initial NAS message , that is , if the GUTI was used
+0
+the network response depends upon the type of identity used by the UE in the initial NAS message , that is , if the GUTI was used
+an EPS authentication is successfully performed
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+The UPLINK NAS TRANSPORT message can sent
+0
+The UPLINK NAS TRANSPORT message can sent
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+0
+still running
+The same applies
+0
+The same applies
+still running
+0
+the MME and the UE create an EPS security context
+The EPS security context is taken into use by the UE and the MME
+0
+The EPS security context is taken into use by the UE and the MME
+the MME and the UE create an EPS security context
+0
+the SECURITY MODE COMMAND message can be accepted
+the UE shall check whether the security mode command can be accepted or not
+0
+the UE shall check whether the security mode command can be accepted or not
+the SECURITY MODE COMMAND message can be accepted
+0
+the attach request is neither for emergency bearer services nor for initiating a PDN connection for emergency bearer services with attach type not set to " EPS emergency attach "
+a default bearer need not be requested by the UE during the attach procedure
+0
+a default bearer need not be requested by the UE during the attach procedure
+the attach request is neither for emergency bearer services nor for initiating a PDN connection for emergency bearer services with attach type not set to " EPS emergency attach "
+0
+the verification is successful
+it shall accept the message
+0
+it shall accept the message
+the verification is successful
+0
+a field extends over more than one octet
+the UE shall
+0
+the UE shall
+a field extends over more than one octet
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection
+The secure exchange of NAS messages shall continued
+0
+The secure exchange of NAS messages shall continued
+the network has established secure exchange of NAS messages for the NAS signalling connection
+0
+A partial native EPS security context is established in the UE and the network
+The network initiates the authentication procedure
+0
+The network initiates the authentication procedure
+A partial native EPS security context is established in the UE and the network
+0
+the UE shall delete the mapped EPS security context
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+the UE shall delete the mapped EPS security context
+0
+an EPS authentication is successfully performed
+the MME shall check the NAS token as specified in 3GPP TS 33.401 [ 19  ] subclause 9.1.1
+0
+the MME shall check the NAS token as specified in 3GPP TS 33.401 [ 19  ] subclause 9.1.1
+an EPS authentication is successfully performed
+0
+The UE shall accept a SECURITY MODE COMMAND message
+NAS security is not activated
+0
+NAS security is not activated
+The UE shall accept a SECURITY MODE COMMAND message
+0
+that integrity protected using the current EPS security context
+the UE shall take the EPS security context indicated in the message into use
+0
+the UE shall take the EPS security context indicated in the message into use
+that integrity protected using the current EPS security context
+0
+a current EPS security context exists
+the UE shall take the non-current native EPS security context into use
+0
+the UE shall take the non-current native EPS security context into use
+a current EPS security context exists
+0
+The MME takes this context into use
+This message is sent by the network
+0
+This message is sent by the network
+The MME takes this context into use
+0
+an EPS authentication is successfully performed
+In an EPS authentication challenge the UE shall check the authenticity of the core network
+0
+In an EPS authentication challenge the UE shall check the authenticity of the core network
+an EPS authentication is successfully performed
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+sending a DOWNLINK NAS TRANSPORT message
+0
+sending a DOWNLINK NAS TRANSPORT message
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+it shall send the initial NAS message unciphered
+0
+it shall send the initial NAS message unciphered
+the network has established secure exchange of NAS messages for the NAS signalling connection.
+0
+The MME initiates the NAS security mode control procedure
+A partial native EPS security context is established in the UE and the network
+0
+A partial native EPS security context is established in the UE and the network
+The MME initiates the NAS security mode control procedure
+0
+the UE radio capability ID IE shall not included
+the UE set the URCIDA bit to " UE radio capability ID available " in the UE radio capability ID availability IE
+0
+the UE set the URCIDA bit to " UE radio capability ID available " in the UE radio capability ID availability IE
+the UE radio capability ID IE shall not included
+0
+the MME shall create a new mapped EPS security context as specified in 3GPP TS 33.401 [ 19 ]
+having a current mapped EPS security context with the UE
+0
+having a current mapped EPS security context with the UE
+the MME shall create a new mapped EPS security context as specified in 3GPP TS 33.401 [ 19 ]
+0
+The UE shall initiate an EPS attach procedure
+the UE needs to transmit an initial NAS message
+0
+the UE needs to transmit an initial NAS message
+The UE shall initiate an EPS attach procedure
+0
+The UE shall initiate an EPS attach procedure
+deciding whether to initiate attach for access to RLOS in WB-S1 mode
+0
+deciding whether to initiate attach for access to RLOS in WB-S1 mode
+The UE shall initiate an EPS attach procedure
+0
+the UE radio capability ID IE shall not included
+the UE set the IE to " UE radio capability ID available "
+0
+the UE set the IE to " UE radio capability ID available "
+the UE radio capability ID IE shall not included
+0
+the encryption of NAS messages has been started between the MME and the UE
+The network accepts the use of PSM
+0
+The network accepts the use of PSM
+the encryption of NAS messages has been started between the MME and the UE
+0
+the periodic tracking area updating procedure is started
+the tracking area updating
+0
+the tracking area updating
+the periodic tracking area updating procedure is started
+0
+the MME and the UE shall delete any existing current mapped EPS security context
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+the MME and the UE shall delete any existing current mapped EPS security context
+0
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+the tracking area updating procedure is initiated in EMM-IDLE mode
+0
+the tracking area updating procedure is initiated in EMM-IDLE mode
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+0
+The MME takes this context into use
+the network shall indicate this
+0
+the network shall indicate this
+The MME takes this context into use
+0
+the MME and the UE shall delete the previously current EPS security context
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+the MME and the UE shall delete the previously current EPS security context
+0
+the UE shall take the EPS security context indicated in the message into use
+a non-current full native EPS security context exists
+0
+a non-current full native EPS security context exists
+the UE shall take the EPS security context indicated in the message into use
+0
+the UE initiates the attach procedure
+the attach attempt counter is equal to 5
+0
+the attach attempt counter is equal to 5
+the UE initiates the attach procedure
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+the MME shall remove the non-current native EPS security context , if any , for any GUTI for this UE
+0
+the MME shall remove the non-current native EPS security context , if any , for any GUTI for this UE
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+the encryption of NAS messages has been started between the MME and the UE
+then the UE's capability to access the 5GCN via E-UTRA shall not affected
+0
+then the UE's capability to access the 5GCN via E-UTRA shall not affected
+the encryption of NAS messages has been started between the MME and the UE
+0
+the MME and the UE create an EPS security context
+In the present document the UE shall consider also the associated keys KASME or K'ASME , EPS NAS ciphering key and EPS NAS integrity key invalid
+0
+In the present document the UE shall consider also the associated keys KASME or K'ASME , EPS NAS ciphering key and EPS NAS integrity key invalid
+the MME and the UE create an EPS security context
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+the MME shall store the current EPS security context
+0
+the MME shall store the current EPS security context
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+the UE shall take the EPS security context indicated in the message into use
+the UE has a valid native EPS security context
+0
+the UE has a valid native EPS security context
+the UE shall take the EPS security context indicated in the message into use
+0
+the MME and the UE shall delete the previously current EPS security context
+the UE shall store the mapped EPS security context
+0
+the UE shall store the mapped EPS security context
+the MME and the UE shall delete the previously current EPS security context
+0
+The UE shall initiate an EPS attach procedure
+attached to the network
+0
+attached to the network
+The UE shall initiate an EPS attach procedure
+0
+The UE shall initiate an attach
+Initiated by the UE normal tracking area updating and combined tracking area updating
+0
+Initiated by the UE normal tracking area updating and combined tracking area updating
+The UE shall initiate an attach
+0
+the attach attempt counter is equal to 5
+The EPS security context is taken into use by the UE and the MME
+0
+The EPS security context is taken into use by the UE and the MME
+the attach attempt counter is equal to 5
+0
+the UE should set the attach attempt counter to 5
+The UE shall accept a SECURITY MODE COMMAND message
+0
+The UE shall accept a SECURITY MODE COMMAND message
+the UE should set the attach attempt counter to 5
+0
+the MME shall either indicate the use of the new mapped EPS security context to the UE
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+the MME shall either indicate the use of the new mapped EPS security context to the UE
+0
+the UE shall start the ciphering and deciphering of NAS messages
+the UE should set the attach attempt counter to 5
+0
+the UE should set the attach attempt counter to 5
+the UE shall start the ciphering and deciphering of NAS messages
+0
+the network may initiate the EMM common procedures , e.g . the EMM authentication procedure
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+the network may initiate the EMM common procedures , e.g . the EMM authentication procedure
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+For the case the MME may skip the authentication procedure even if no EPS security context is available
+0
+For the case the MME may skip the authentication procedure even if no EPS security context is available
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+the UE shall map the P-TMSI and RAI into the EPS mobile identity IE
+the UE holds a valid P-TMSI and RAI
+0
+the UE holds a valid P-TMSI and RAI
+the UE shall map the P-TMSI and RAI into the EPS mobile identity IE
+0
+the MME and the UE create an EPS security context
+the UE shall take the non-current native EPS security context into use
+0
+the UE shall take the non-current native EPS security context into use
+the MME and the UE create an EPS security context
+0
+still running
+entering the state
+0
+entering the state
+still running
+0
+the attach attempt counter is equal to 5
+the UE shall reset the attach attempt counter or the tracking area updating attempt counter respectively
+0
+the UE shall reset the attach attempt counter or the tracking area updating attempt counter respectively
+the attach attempt counter is equal to 5
+0
+the MME locally deactivates all non-emergency EPS bearer contexts
+, the UE deactivates all EPS bearer contexts locally
+0
+, the UE deactivates all EPS bearer contexts locally
+the MME locally deactivates all non-emergency EPS bearer contexts
+0
+the UE shall initiate an EPS attach procedure
+the UE shall reset the attach attempt counter
+0
+the UE shall reset the attach attempt counter
+the UE shall initiate an EPS attach procedure
+0
+the UE shall deem that the network has passed the authentication check successfully , stop timer T3418 or T3420 , respectively , and execute the security mode control procedure
+the MME initiates a security mode control procedure
+0
+the MME initiates a security mode control procedure
+the UE shall deem that the network has passed the authentication check successfully , stop timer T3418 or T3420 , respectively , and execute the security mode control procedure
+0
+the UE shall initiate an EPS attach procedure
+the UE may set the attach attempt counter
+0
+the UE may set the attach attempt counter
+the UE shall initiate an EPS attach procedure
+0
+still running
+kept running until it expires
+0
+kept running until it expires
+still running
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+sending a SECURITY MODE COMMAND message including the eKSI of the EPS security context to be modified and including a new set of selected NAS security algorithms
+0
+sending a SECURITY MODE COMMAND message including the eKSI of the EPS security context to be modified and including a new set of selected NAS security algorithms
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+the UE shall take the EPS security context indicated in the message into use.
+The UE shall initiate an attach
+0
+The UE shall initiate an attach
+the UE shall take the EPS security context indicated in the message into use.
+0
+the UE shall take the EPS security context indicated in the message into use.
+the UE shall start the ciphering and deciphering of NAS messages
+0
+the UE shall start the ciphering and deciphering of NAS messages
+the UE shall take the EPS security context indicated in the message into use.
+0
+the SECURITY MODE COMMAND message can be accepted
+the UE should set the attach attempt counter to 5
+0
+the UE should set the attach attempt counter to 5
+the SECURITY MODE COMMAND message can be accepted
+0
+the MME may re-establish the secure exchange of NAS messages
+The secure exchange of NAS messages shall continued
+0
+The secure exchange of NAS messages shall continued
+the MME may re-establish the secure exchange of NAS messages
+0
+then the non-current EPS security context shall become the current EPS security context
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+then the non-current EPS security context shall become the current EPS security context
+0
+the UE shall locally detach from the network
+the MME performs a local detach
+0
+the MME performs a local detach
+the UE shall locally detach from the network
+0
+The UE shall accept a SECURITY MODE COMMAND message
+the UE responds with a SECURITY MODE COMPLETE
+0
+the UE responds with a SECURITY MODE COMPLETE
+The UE shall accept a SECURITY MODE COMMAND message
+0
+the UE shall take the EPS security context indicated in the message into use
+that integrity protected using the current EPS security context
+0
+that integrity protected using the current EPS security context
+the UE shall take the EPS security context indicated in the message into use
+0
+the network is validated successfully
+The UE shall mark it as valid
+0
+The UE shall mark it as valid
+the network is validated successfully
+0
+then the UE shall mark it as valid
+the UE holds a valid P-TMSI and RAI
+0
+the UE holds a valid P-TMSI and RAI
+then the UE shall mark it as valid
+0
+the KSI matches a valid non-current native EPS security context held in the UE while the UE has a mapped EPS security context as the current EPS security context
+the UE shall take the EPS security context indicated in the message into use
+0
+the UE shall take the EPS security context indicated in the message into use
+the KSI matches a valid non-current native EPS security context held in the UE while the UE has a mapped EPS security context as the current EPS security context
+0
+The network initiates the authentication procedure
+the UE shall take the EPS security context indicated in the message into use.
+0
+the UE shall take the EPS security context indicated in the message into use.
+The network initiates the authentication procedure
+0
+the MME and the UE shall not delete the previously current native EPS security context
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+the MME and the UE shall not delete the previously current native EPS security context
+0
+the SECURITY MODE COMMAND message can be accepted
+the UE shall send a SECURITY MODE REJECT message
+0
+the UE shall send a SECURITY MODE REJECT message
+the SECURITY MODE COMMAND message can be accepted
+0
+the UE shall map the P-TMSI and RAI into the EPS mobile identity IE
+the UE is required to delete an eKSI
+0
+the UE is required to delete an eKSI
+the UE shall map the P-TMSI and RAI into the EPS mobile identity IE
+0
+the MME may re-establish the secure exchange of NAS messages
+secure exchange of NAS messages is triggered by the indication from the lower layers that the user plane radio bearers are successfully set up
+0
+secure exchange of NAS messages is triggered by the indication from the lower layers that the user plane radio bearers are successfully set up
+the MME may re-establish the secure exchange of NAS messages
+0
+The UE shall initiate an EPS attach procedure
+the UE has a PDN connection for RLOS established after completion of attach procedure
+0
+the UE has a PDN connection for RLOS established after completion of attach procedure
+The UE shall initiate an EPS attach procedure
+0
+replying with a NAS message that is integrity protected and ciphered using the current EPS security context
+all NAS messages exchanged between the UE and the MME are sent integrity protected using the current EPS security algorithms
+0
+all NAS messages exchanged between the UE and the MME are sent integrity protected using the current EPS security algorithms
+replying with a NAS message that is integrity protected and ciphered using the current EPS security context
+0
+the encryption of NAS messages has been started between the MME and the UE
+This done
+0
+This done
+the encryption of NAS messages has been started between the MME and the UE
+0
+the UE shall check whether the security mode command can be accepted or not
+initiating a security mode control procedure
+0
+initiating a security mode control procedure
+the UE shall check whether the security mode command can be accepted or not
+0
+The network initiates the authentication procedure
+The MME initiates the NAS security mode control procedure
+0
+The MME initiates the NAS security mode control procedure
+The network initiates the authentication procedure
+0
+The UE shall initiate an EPS attach procedure
+the UE needs to use , change in the UE
+0
+the UE needs to use , change in the UE
+The UE shall initiate an EPS attach procedure
+0
+starting timer T3460
+the UE shall stop timer T3417 , T3417ext or T3417ext-mt
+0
+the UE shall stop timer T3417 , T3417ext or T3417ext-mt
+starting timer T3460
+0
+the UE shall initiate an EPS attach procedure
+this GUTI shall used in the attach procedure
+0
+this GUTI shall used in the attach procedure
+the UE shall initiate an EPS attach procedure
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+A partial native EPS security context established in the UE and the network
+0
+A partial native EPS security context established in the UE and the network
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+The MME can also take the non-current native EPS security context, if any into use
+0
+The MME can also take the non-current native EPS security context, if any into use
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+In an EPS authentication challenge the UE shall check the authenticity of the core network
+an EPS authentication is successfully performed
+0
+an EPS authentication is successfully performed
+In an EPS authentication challenge the UE shall check the authenticity of the core network
+0
+the UE shall initiate an EPS attach procedure
+then the network shall ignore the second ATTACH REQUEST message
+0
+then the network shall ignore the second ATTACH REQUEST message
+the UE shall initiate an EPS attach procedure
+0
+the UE shall check whether the security mode command can be accepted or not
+the SECURITY MODE COMMAND message can be accepted
+0
+the SECURITY MODE COMMAND message can be accepted
+the UE shall check whether the security mode command can be accepted or not
+0
+the UE shall send the AUTHENTICATION RESPONSE message to the network
+an EPS authentication is successfully performed
+0
+an EPS authentication is successfully performed
+the UE shall send the AUTHENTICATION RESPONSE message to the network
+0
+the MME and the UE create an EPS security context
+the MME shall remove the non-current native EPS security context , if any , for any GUTI for this UE
+0
+the MME shall remove the non-current native EPS security context , if any , for any GUTI for this UE
+the MME and the UE create an EPS security context
+0
+Timer T3412 is stopped
+timer T3412 expires
+0
+timer T3412 expires
+Timer T3412 is stopped
+0
+The UE shall accept a SECURITY MODE COMMAND message
+the UE replies with a SECURITY MODE COMPLETE message
+0
+the UE replies with a SECURITY MODE COMPLETE message
+The UE shall accept a SECURITY MODE COMMAND message
+0
+The MME can also take the non-current native EPS security context , if any into use
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+0
+the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services
+The MME can also take the non-current native EPS security context , if any into use
+0
+the KSI matches a valid non-current native EPS security context held in the UE while the UE has a mapped EPS security context as the current EPS security context
+then the UE shall either check whether the SECURITY MODE COMMAND message indicates the eKSI of the current EPS security context , if it is a mapped EPS security context in order not to re-generate the K'ASME
+0
+then the UE shall either check whether the SECURITY MODE COMMAND message indicates the eKSI of the current EPS security context , if it is a mapped EPS security context in order not to re-generate the K'ASME
+the KSI matches a valid non-current native EPS security context held in the UE while the UE has a mapped EPS security context as the current EPS security context
+0
+then the MME shall include the ciphering key data in the Ciphering key data IE of the ATTACH ACCEPT message
+the network has established secure exchange of NAS messages for the NAS signalling connection
+0
+the network has established secure exchange of NAS messages for the NAS signalling connection
+then the MME shall include the ciphering key data in the Ciphering key data IE of the ATTACH ACCEPT message
+0
+For the case see subclause 5.5.1.2.3 and subclause 5.4.2.5
+the UE supports ProSe direct discovery
+0
+the UE supports ProSe direct discovery
+For the case see subclause 5.5.1.2.3 and subclause 5.4.2.5
+0
+the verification is successful
+The UE shall mark it as valid
+0
+The UE shall mark it as valid
+the verification is successful
+0
+the MME locally deactivates all non-emergency EPS bearer contexts
+initiating an EPS bearer context deactivation procedure
+0
+initiating an EPS bearer context deactivation procedure
+the MME locally deactivates all non-emergency EPS bearer contexts
+0
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+, the tracking area updating or combined tracking area updating procedure has been initiated in EMM-IDLE mode
+0
+, the tracking area updating or combined tracking area updating procedure has been initiated in EMM-IDLE mode
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+0
+the UE shall initiate an EPS attach procedure
+The UE shall include this IE during a combined attach procedure
+0
+The UE shall include this IE during a combined attach procedure
+the UE shall initiate an EPS attach procedure
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+In an EPS authentication challenge the UE shall check the authenticity of the core network
+0
+In an EPS authentication challenge the UE shall check the authenticity of the core network
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+the tracking area updating
+0
+the tracking area updating
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+0
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+initiating a tracking area updating procedure while in S1 mode
+0
+initiating a tracking area updating procedure while in S1 mode
+the periodic tracking area updating procedure is delayed until the UE returns to EMM-REGISTERED.NORMAL-SERVICE
+0
+the periodic tracking area updating procedure is started
+the tracking area of the serving cell has changed
+0
+the tracking area of the serving cell has changed
+the periodic tracking area updating procedure is started
+0
+The UE shall initiate an attach
+the attach procedure is for emergency bearer services
+0
+the attach procedure is for emergency bearer services
+The UE shall initiate an attach
+0
+In the present document the UE shall consider also the associated keys KASME or K'ASME , EPS NAS ciphering key and EPS NAS integrity key invalid
+the UE has a valid GUTI
+0
+the UE has a valid GUTI
+In the present document the UE shall consider also the associated keys KASME or K'ASME , EPS NAS ciphering key and EPS NAS integrity key invalid
+0
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+the UE is not known in the HSS
+0
+the UE is not known in the HSS
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+0
+the UE shall initiate an EPS attach procedure
+the EMM entity in the MME initiates the procedure
+0
+the EMM entity in the MME initiates the procedure
+the UE shall initiate an EPS attach procedure
+0
+the KSI matches a valid non-current native EPS security context held in the UE while the UE has a mapped EPS security context as the current EPS security context
+The UE shall mark the EPS security context on the USIM or in the non-volatile memory as invalid
+0
+The UE shall mark the EPS security context on the USIM or in the non-volatile memory as invalid
+the KSI matches a valid non-current native EPS security context held in the UE while the UE has a mapped EPS security context as the current EPS security context
+0
+The UE shall include this IE
+the UE includes the T3324 value IE
+0
+the UE includes the T3324 value IE
+The UE shall include this IE
+0
+a partial native EPS security context is taken into use through a security mode control procedure
+The MME can also take the non-current native EPS security context , if any into use
+0
+The MME can also take the non-current native EPS security context , if any into use
+a partial native EPS security context is taken into use through a security mode control procedure
+0
+the periodic tracking area updating procedure is started
+The network supervises the periodic tracking area updating procedure of the UE
+0
+The network supervises the periodic tracking area updating procedure of the UE
+the periodic tracking area updating procedure is started
+0
+the UE shall initiate an EPS attach procedure
+the UE shall
+0
+the UE shall
+the UE shall initiate an EPS attach procedure
+0
+an EPS authentication is successfully performed
+the network should terminate the authentication procedure
+0
+the network should terminate the authentication procedure
+an EPS authentication is successfully performed
+0
+The EPS security context is taken into use by the UE and the MME
+initiating a security mode control procedure
+0
+initiating a security mode control procedure
+The EPS security context is taken into use by the UE and the MME
+0
+The UE shall initiate an EPS attach procedure
+the attach or combined attach procedure failed due to a missing response from the network or due to the circumstances described in subclauses 5.5.1.2.5 , 5.5.1.2.6 , 5.5.1.3.5 and 5.5.2.3.4
+0
+the attach or combined attach procedure failed due to a missing response from the network or due to the circumstances described in subclauses 5.5.1.2.5 , 5.5.1.2.6 , 5.5.1.3.5 and 5.5.2.3.4
+The UE shall initiate an EPS attach procedure
+0
+a valid EPS security context exists
+the MME and the UE shall not delete the partial native EPS security context if any
+0
+the MME and the UE shall not delete the partial native EPS security context if any
+a valid EPS security context exists
+0
+the UE shall initiate an EPS attach procedure
+the UE shall progress the detach procedure
+0
+the UE shall progress the detach procedure
+the UE shall initiate an EPS attach procedure
+0
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+the UE is not in its HPLMN or EHPLMN in addition to the UE requirements specified in subclause 5.5.1 , 5.5.3 and 5.6.1
+0
+the UE is not in its HPLMN or EHPLMN in addition to the UE requirements specified in subclause 5.5.1 , 5.5.3 and 5.6.1
+additional UE requirements are specified in subclause 5.4.2.7 under " for items c , d , e "
+0
+a default bearer also established between the UE and the PDN
+an EPS authentication is successfully performed
+0
+an EPS authentication is successfully performed
+a default bearer also established between the UE and the PDN
+0
+The UE shall initiate an attach
+accepting the attach or the tracking area updating procedure
+0
+accepting the attach or the tracking area updating procedure
+The UE shall initiate an attach
+1
+The UE shall accept a SECURITY MODE COMMAND message
+the SECURITY MODE COMMAND message can be accepted
+1
+the SECURITY MODE COMMAND message can be accepted
+The UE shall accept a SECURITY MODE COMMAND message
+1
+the network has established secure exchange of NAS messages for the NAS signalling connection
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME during attach procedure
+1
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME during attach procedure
+the network has established secure exchange of NAS messages for the NAS signalling connection
+1
+the UE shall initiate an EPS attach procedure
+In state EMM-DEREGISTERED the UE initiates the attach procedure
+1
+In state EMM-DEREGISTERED the UE initiates the attach procedure
+the UE shall initiate an EPS attach procedure
+1
+the MME initiates a security mode control procedure or during the inter-system handover procedure from A/Gb mode to S1 mode or Iu mode to S1 mode
+The MME initiates the NAS security mode control procedure
+1
+The MME initiates the NAS security mode control procedure
+the MME initiates a security mode control procedure or during the inter-system handover procedure from A/Gb mode to S1 mode or Iu mode to S1 mode
+1
+the MME initiates a security mode control procedure
+The MME initiates the NAS security mode control procedure
+1
+The MME initiates the NAS security mode control procedure
+the MME initiates a security mode control procedure
+1
+the encryption of NAS messages has been started between the MME and the UE
+Except for the CONTROL PLANE SERVICE REQUEST message including an ESM message container information element or a NAS message container information element the UE shall start the ciphering and deciphering of NAS messages
+1
+Except for the CONTROL PLANE SERVICE REQUEST message including an ESM message container information element or a NAS message container information element the UE shall start the ciphering and deciphering of NAS messages
+the encryption of NAS messages has been started between the MME and the UE
+1
+The UE shall initiate an attach procedure
+In state EMM-DEREGISTERED the UE initiates the attach procedure
+1
+In state EMM-DEREGISTERED the UE initiates the attach procedure
+The UE shall initiate an attach procedure
+1
+an EPS authentication is successfully performed
+The network initiates the authentication procedure
+1
+The network initiates the authentication procedure
+an EPS authentication is successfully performed
+1
+the attach attempt counter is equal to 5
+the UE should set the attach attempt counter to 5
+1
+the UE should set the attach attempt counter to 5
+the attach attempt counter is equal to 5
+1
+the UE shall initiate an EPS attach procedure
+the UE initiates the attach procedure
+1
+the UE initiates the attach procedure
+the UE shall initiate an EPS attach procedure
+1
+the encryption of NAS messages has been started between the MME and the UE
+the UE shall start the ciphering and deciphering of NAS messages
+1
+the UE shall start the ciphering and deciphering of NAS messages
+the encryption of NAS messages has been started between the MME and the UE
+1
+the secure exchange of NAS messages has been established for a NAS signalling connection
+Secure exchange of NAS messages via a NAS signalling connection usually established by the MME during the attach procedure
+1
+Secure exchange of NAS messages via a NAS signalling connection usually established by the MME during the attach procedure
+the secure exchange of NAS messages has been established for a NAS signalling connection
+1
+the network has established secure exchange of NAS messages for the NAS signalling connection
+Secure exchange of NAS messages via a NAS signalling connection usually established by the MME during the attach procedure
+1
+Secure exchange of NAS messages via a NAS signalling connection usually established by the MME during the attach procedure
+the network has established secure exchange of NAS messages for the NAS signalling connection
+1
+initiating a security mode control procedure
+The MME initiates the NAS security mode control procedure
+1
+The MME initiates the NAS security mode control procedure
+initiating a security mode control procedure
+1
+The UE shall initiate an attach
+the UE initiates the attach procedure
+1
+the UE initiates the attach procedure
+The UE shall initiate an attach
+1
+the secure exchange of NAS messages has been established for a NAS signalling connection
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME during attach procedure
+1
+Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME during attach procedure
+the secure exchange of NAS messages has been established for a NAS signalling connection
+2
+the MME and the UE shall delete the previously current EPS security context
+the EPS security context shall be deleted
+3
+the EPS security context shall be deleted
+the MME and the UE shall delete the previously current EPS security context
+2
+the parital native EPS security context shall be marked
+The UE shall mark the EPS security context on the USIM or in the non-volatile memory as invalid
+3
+The UE shall mark the EPS security context on the USIM or in the non-volatile memory as invalid
+the parital native EPS security context shall be marked
+2
+a partial native EPS security context is taken into use through a security mode control procedure
+the UE shall take the EPS security context indicated in the message into use
+3
+the UE shall take the EPS security context indicated in the message into use
+a partial native EPS security context is taken into use through a security mode control procedure
+2
+A partial native EPS security context is established in the UE and the network
+the MME and the UE create an EPS security context
+3
+the MME and the UE create an EPS security context
+A partial native EPS security context is established in the UE and the network
+2
+the MME and the UE shall delete any existing current mapped EPS security context
+the MME and the UE shall remove EPS security context
+3
+the MME and the UE shall remove EPS security context
+the MME and the UE shall delete any existing current mapped EPS security context
+2
+a partial native EPS security context is taken into use through a security mode control procedure
+The EPS security context is taken into use by the UE and the MME
+3
+The EPS security context is taken into use by the UE and the MME
+a partial native EPS security context is taken into use through a security mode control procedure
+2
+the parital native EPS security context shall be marked on the USIM or in the non-volatile memory as invalid
+The UE shall mark the EPS security context
+3
+The UE shall mark the EPS security context
+the parital native EPS security context shall be marked on the USIM or in the non-volatile memory as invalid
+2
+a partial native EPS security context is taken into use through a security mode control procedure
+The EPS security context taken into use by the UE and the MME
+3
+The EPS security context taken into use by the UE and the MME
+a partial native EPS security context is taken into use through a security mode control procedure
+2
+a partial native EPS security context is taken into use through a security mode control procedure
+the UE shall take the EPS security context indicated in the message into use.
+3
+the UE shall take the EPS security context indicated in the message into use.
+a partial native EPS security context is taken into use through a security mode control procedure
