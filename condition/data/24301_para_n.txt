@@ -18881,74 +18881,161 @@
 {6807, 0} If UE starts timer T3402, the timer T3402 will expire after the period of time as specified by T3402.
 ---
 
-{6808, 0} If UE starts timer T3410, the timer T3410 will expire after the period of time as specified by T3410.
+{6808, 0} If UE starts timer T3402, the timer T3402 will expire.
 ---
 
-{6809, 0} If UE starts timer T3411, the timer T3411 will expire after the period of time as specified by T3411.
+{6809, 0} If UE starts timer T3410, the timer T3410 will expire after the period of time as specified by T3410.
 ---
 
-{6810, 0} If UE starts timer T3412, the timer T3412 will expire after the period of time as specified by T3412.
+{6810, 0} If UE starts timer T3410, the timer T3410 will expire.
 ---
 
-{6811, 0} If UE starts timer T3416, the timer T3416 will expire after the period of time as specified by T3416.
+{6811, 0} If UE starts timer T3411, the timer T3411 will expire after the period of time as specified by T3411.
 ---
 
-{6812, 0} If UE starts timer T3417, the timer T3417 will expire after the period of time as specified by T3417.
+{6812, 0} If UE starts timer T3411, the timer T3411 will expire.
 ---
 
-{6813, 0} If UE starts timer T3418, the timer T3418 will expire after the period of time as specified by T3418.
+{6813, 0} If UE starts timer T3412, the timer T3412 will expire after the period of time as specified by T3412.
 ---
 
-{6814, 0} If UE starts timer T3420, the timer T3420 will expire after the period of time as specified by T3420.
+{6814, 0} If UE starts timer T3412, the timer T3412 will expire.
 ---
 
-{6815, 0} If UE starts timer T3421, the timer T3421 will expire after the period of time as specified by T3421.
+{6815, 0} If UE starts timer T3416, the timer T3416 will expire after the period of time as specified by T3416.
 ---
 
-{6816, 0} If UE starts timer T3423, the timer T3423 will expire after the period of time as specified by T3423.
+{6816, 0} If UE starts timer T3416, the timer T3416 will expire.
 ---
 
-{6817, 0} If UE starts timer T3430, the timer T3430 will expire after the period of time as specified by T3430.
+{6817, 0} If UE starts timer T3417, the timer T3417 will expire after the period of time as specified by T3417.
 ---
 
-{6818, 0} If UE starts timer T3440, the timer T3440 will expire after the period of time as specified by T3440.
+{6818, 0} If UE starts timer T3417, the timer T3417 will expire.
 ---
 
-{6819, 0} If UE starts timer T3442, the timer T3442 will expire after the period of time as specified by T3442.
+{6819, 0} If UE starts timer T3418, the timer T3418 will expire after the period of time as specified by T3418.
 ---
 
-{6820, 0} If UE starts timer T3444, the timer T3444 will expire after the period of time as specified by T3444.
+{6820, 0} If UE starts timer T3418, the timer T3418 will expire.
 ---
 
-{6821, 0} If UE starts timer T3445, the timer T3445 will expire after the period of time as specified by T3445.
+{6821, 0} If UE starts timer T3420, the timer T3420 will expire after the period of time as specified by T3420.
 ---
 
-{6822, 0} If UE starts timer T3447, the timer T3447 will expire after the period of time as specified by T3447.
+{6822, 0} If UE starts timer T3420, the timer T3420 will expire.
 ---
 
-{6823, 0} If UE starts timer T3448, the timer T3448 will expire after the period of time as specified by T3448.
+{6823, 0} If UE starts timer T3421, the timer T3421 will expire after the period of time as specified by T3421.
 ---
 
-{6824, 0} If UE starts timer T3449, the timer T3449 will expire after the period of time as specified by T3449.
+{6824, 0} If UE starts timer T3421, the timer T3421 will expire.
 ---
 
-{6825, 0} If UE starts timer T3413, the timer T3413 will expire after the period of time as specified by T3413.
+{6825, 0} If UE starts timer T3423, the timer T3423 will expire after the period of time as specified by T3423.
 ---
 
-{6826, 0} If UE starts timer T3415, the timer T3415 will expire after the period of time as specified by T3415.
+{6826, 0} If UE starts timer T3423, the timer T3423 will expire.
 ---
 
-{6827, 0} If UE starts timer T3422, the timer T3422 will expire after the period of time as specified by T3422.
+{6827, 0} If UE starts timer T3430, the timer T3430 will expire after the period of time as specified by T3430.
 ---
 
-{6828, 0} If UE starts timer T3447, the timer T3447 will expire after the period of time as specified by T3447.
+{6828, 0} If UE starts timer T3430, the timer T3430 will expire.
 ---
 
-{6829, 0} If UE starts timer T3450, the timer T3450 will expire after the period of time as specified by T3450.
+{6829, 0} If UE starts timer T3440, the timer T3440 will expire after the period of time as specified by T3440.
 ---
 
-{6830, 0} If UE starts timer T3460, the timer T3460 will expire after the period of time as specified by T3460.
+{6830, 0} If UE starts timer T3440, the timer T3440 will expire.
 ---
 
-{6831, 0} If UE starts timer T3470, the timer T3470 will expire after the period of time as specified by T3470.
+{6831, 0} If UE starts timer T3442, the timer T3442 will expire after the period of time as specified by T3442.
+---
+
+{6832, 0} If UE starts timer T3442, the timer T3442 will expire.
+---
+
+{6833, 0} If UE starts timer T3444, the timer T3444 will expire after the period of time as specified by T3444.
+---
+
+{6834, 0} If UE starts timer T3444, the timer T3444 will expire.
+---
+
+{6835, 0} If UE starts timer T3445, the timer T3445 will expire after the period of time as specified by T3445.
+---
+
+{6836, 0} If UE starts timer T3445, the timer T3445 will expire.
+---
+
+{6837, 0} If UE starts timer T3447, the timer T3447 will expire after the period of time as specified by T3447.
+---
+
+{6838, 0} If UE starts timer T3447, the timer T3447 will expire.
+---
+
+{6839, 0} If UE starts timer T3448, the timer T3448 will expire after the period of time as specified by T3448.
+---
+
+{6840, 0} If UE starts timer T3448, the timer T3448 will expire.
+---
+
+{6841, 0} If UE starts timer T3449, the timer T3449 will expire after the period of time as specified by T3449.
+---
+
+{6842, 0} If UE starts timer T3449, the timer T3449 will expire.
+---
+
+{6843, 0} If UE starts timer T3413, the timer T3413 will expire after the period of time as specified by T3413.
+---
+
+{6844, 0} If UE starts timer T3413, the timer T3413 will expire.
+---
+
+{6845, 0} If UE starts timer T3415, the timer T3415 will expire after the period of time as specified by T3415.
+---
+
+{6846, 0} If UE starts timer T3415, the timer T3415 will expire.
+---
+
+{6847, 0} If UE starts timer T3422, the timer T3422 will expire after the period of time as specified by T3422.
+---
+
+{6848, 0} If UE starts timer T3422, the timer T3422 will expire.
+---
+
+{6849, 0} If UE starts timer T3447, the timer T3447 will expire after the period of time as specified by T3447.
+---
+
+{6850, 0} If UE starts timer T3447, the timer T3447 will expire.
+---
+
+{6851, 0} If UE starts timer T3450, the timer T3450 will expire after the period of time as specified by T3450.
+---
+
+{6852, 0} If UE starts timer T3450, the timer T3450 will expire.
+---
+
+{6853, 0} If UE starts timer T3460, the timer T3460 will expire after the period of time as specified by T3460.
+---
+
+{6854, 0} If UE starts timer T3460, the timer T3460 will expire.
+---
+
+{6855, 0} If UE starts timer T3470, the timer T3470 will expire after the period of time as specified by T3470.
+---
+
+{6856, 0} If UE starts timer T3470, the timer T3470 will expire.
+---
+
+{6857, 0} If UE starts timer T3346, the timer T3346 will expire after the period of time as specified by T3346.
+---
+
+{6858, 0} If UE starts timer T3346, the timer T3346 will expire.
+---
+
+{6859, 0} If UE starts timer T3247, the timer T3247 will expire after the period of time as specified by T3247.
+---
+
+{6860, 0} If UE starts timer T3247, the timer T3247 will expire.
 ---

@@ -90,13 +90,15 @@ def analyze_sent(sent_text = None):
     if sent_text == None:
         sent_text = 'Upon receipt of the ATTACH REJECT message, if the message is with EMM cause #22 or #23 or the message is not integrity protected, the UE shall delete the GUTI, send a response to the MME, or entering the state EMM-DERIGESTERED.'
         sent_text = 'If the attach attempt counter is equal to 5, the UE shall delete any GUTI, TAI list, last visited registered TAI, list of equivalent PLMNs and KSI.'
+        sent_text = 'The MME initiates the NAS security mode control procedure by sending a SECURITY MODE COMMAND message to the UE and starting timer T3460.'
+        sent_text = 'Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME during the attach procedure by initiating a security mode control procedure.'
 
-    #print('\n>>', sent_text)
+    print('\n>>', sent_text)
 
     sent = NLP.data.sentence(sent_text)
     mini_tree_set = analyze_sent_on_result_verb(sent)
     mini_tree_set = analyze_sent_on_condition_verb(mini_tree_set)
-    #output_mini_tree_set(mini_tree_set)
+    output_mini_tree_set(mini_tree_set)
 
     return mini_tree_set
 
