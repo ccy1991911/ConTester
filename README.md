@@ -19,3 +19,7 @@ Please enter the folder **code** and run the following command to train the mode
 ```python
 sh batch_train.sh
 ````
+Please run the following command to get the EDG.
+```python
+python EDG_build.py
+```
