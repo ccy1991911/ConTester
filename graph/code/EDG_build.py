@@ -25,7 +25,7 @@ from sentence_transformers.util import batch_to_device
 import ccy
 
 class Node():
-    def __init__(self, ID, weight, cat, condition_or_result, content_text, sent_text):
+    def __init__(self, ID, weight, cat, condition_or_result, content_text, sent_text, start_Node = False, end_Node = False):
 
         self.ID = ID
         self.weight = weight
@@ -33,6 +33,8 @@ class Node():
         self.condition_or_result = condition_or_result
         self.content_text = content_text
         self.sent_text = sent_text
+        self.start_Node = start_Node
+        self.end_Node = end_Node
 
 class Edge():
     def __init__(self, ID, weight, in_Node_ID, out_Node_ID):
@@ -360,13 +362,13 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
         s = 'Once the encryption of NAS messages has been started between the MME and the UE, the receiver shall discard the unciphered NAS messages which shall have been ciphered according to the rules described in this specification.'
         s = 'Except for the CONTROL PLANE SERVICE REQUEST message including an ESM message container information element or a NAS message container information element, the UE shall start the ciphering and deciphering of NAS messages when the secure exchange of NAS messages has been established for a NAS signalling connection.'
         s = 'Secure exchange of NAS messages via a NAS signalling connection is usually established by the MME during the attach procedure by initiating a security mode control procedure.'
-        #s = 'The MME initiates the NAS security mode control procedure by sending a SECURITY MODE COMMAND message to the UE and starting timer T3460.'
+        s = 'The MME initiates the NAS security mode control procedure by sending a SECURITY MODE COMMAND message to the UE and starting timer T3460.'
         #s = 'If UE starts timer T3346, the timer T3346 will expire after the period of time as specified by T3346.'
         print('query 1:', query1(s))
 
     if flag3 == True:
-        in_Node_ID = 1315
-        out_Node_ID = 2375
+        in_Node_ID = 2083
+        out_Node_ID = 110
         print('query 2:', query2(in_Node_ID, out_Node_ID))
 
     if flag4 == True:
@@ -467,5 +469,5 @@ if __name__ == '__main__':
 
     build_EDG_for_only_causal_relation()
     build_EDG_with_model(False)
-    #debug(False, False, False, False)
+    #debug(True, False, True, False)
     print('Done all code')
