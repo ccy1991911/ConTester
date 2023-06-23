@@ -24,3 +24,6 @@ Please run the following command to get the EDG and do some preparation for DP.
 python EDG_build.py
 python EDG_DP_0.py
 ```
+The file EDG_DP.py is used to find the chain.
+
+Based on the output of EDG_DP.py, we manually fill the parameters and construct the test procedures. Please see the summary of procedures at: [link](https://sites.google.com/view/contester/homepage/security-requirement/details-of-tests)
