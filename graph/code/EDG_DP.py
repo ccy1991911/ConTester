@@ -27,6 +27,8 @@ from sentence_transformers.util import batch_to_device
 
 import ccy
 
+import queue
+
 
 messages_network_to_UE = [
     'ATTACH ACCEPT',
@@ -67,13 +69,6 @@ message_UE_to_network = [
     'CONTROL PLANE SERVICE REQUEST'
 ]
 
-def include_message(text, message_list):
-
-    for m in message_list:
-        if m in text:
-            return True        
-    return False
-
 
 class Node():
     def __init__(self, ID, weight, cat, condition_or_result, content_text, sent_text, start_Node = False, end_Node = False):
@@ -109,7 +104,7 @@ train_loss.eval()
 
 def preparation():
 
-    global EDG_edge 
+    global EDG_edge
     global EDG_node
     global dic_text_2_embedding
 
@@ -119,17 +114,13 @@ def preparation():
         EDG_edge = pickle.load(f)
     with open('../data/EDG_embeddings.pkl', 'rb') as f:
         dic_text_2_embedding = pickle.load(f)
-        
+
     print('Done: preparation')
 
     return
 
 
 def get_embeddings(text_list):
-
-    global dic_text_2_embedding
-    with open('../data/EDG_embeddings.pkl', 'rb') as f:
-        dic_text_2_embedding = pickle.load(f)
 
     new_text_list = list()
     for text in text_list:
@@ -147,10 +138,10 @@ def get_embeddings(text_list):
     with open('../data/EDG_embeddings.pkl', 'wb') as f:
         pickle.dump(dic_text_2_embedding, f)
 
-    print('Done: update embeddings')    
+    print('Done: update embeddings')
 
     return
-    
+
 
 def build_start_Node_set():
 
@@ -162,7 +153,7 @@ def build_start_Node_set():
         start_Node_symantic.append('the MME sends a %s message'%m)
         start_Node_symantic.append('%s message is sent'%m)
         start_Node_symantic.append('send a %s message to the UE'%m)
-        
+
 
     get_embeddings(start_Node_symantic)
 
@@ -173,11 +164,11 @@ def build_start_Node_set():
         for node_ID in EDG_node:
             if EDG_node[node_ID].cat == 'text':
                 for start_message in start_Node_symantic:
-                    to_predict_pair.append((node_ID, start_message))                    
+                    to_predict_pair.append((node_ID, start_message))
 
         return to_predict_pair
-    
-    
+
+
     def get_compare_result_md52result(from_pickle = False):
 
         def check_predict_and_probability(all_preds, all_probs, i):
@@ -198,13 +189,13 @@ def build_start_Node_set():
                     return True
 
             return False
-        
+
         compare_result_md52result = {}
-        if from_pickle == True:            
+        if from_pickle == True:
             with open('../data/EDG_match_result.pkl', 'rb') as f:
                 compare_result_md52result = pickle.load(f)
                 print('previous record md5 cnt:', len(compare_result_md52result))
-        
+
         to_predict_pair_text_md52text = {}
         for node_ID, text2 in to_predict_pair:
             text1 = EDG_node[node_ID].content_text
@@ -219,7 +210,7 @@ def build_start_Node_set():
         all_label = list()
         for md5 in to_predict_pair_text_md52text:
             sent_1_text, sent_2_text = to_predict_pair_text_md52text[md5]
-            
+
             id_2_text_pair_md5[cnt] = md5
             cnt += 1
             id_2_text_pair_md5[cnt] = md5
@@ -232,7 +223,7 @@ def build_start_Node_set():
             cated_emb = np.concatenate([emb1, emb0], axis=-1)
             all_input.append(cated_emb)
             all_label.append(0)
-         
+
         print('Done: load to input to be predicted')
 
         if len(all_input) > 0:
@@ -267,12 +258,12 @@ def build_start_Node_set():
             all_preds = np.concatenate(all_preds,0)
 
             print('Done: finish predict')
-           
+
             for i in range(0, len(all_preds), 2):
                 md5 = id_2_text_pair_md5[i]
                 compare_result_md52result[md5] = False
                 if check_predict_and_probability(all_preds, all_probs, i) == True:
-                    compare_result_md52result[md5] = True            
+                    compare_result_md52result[md5] = True
 
         with open('../data/EDG_match_result.pkl', 'wb') as f:
             pickle.dump(compare_result_md52result, f)
@@ -291,12 +282,12 @@ def build_start_Node_set():
     for node_ID, text2 in to_predict_pair:
         text1 = EDG_node[node_ID].content_text
         md5 = ccy.get_md5(text1 + text2)
-        if compare_result_md52result[md5] == True and include_message(text1, messages_network_to_UE):
-            EDG_node[node_ID].start_Node = True            
-       
+        if compare_result_md52result[md5] == True:
+            EDG_node[node_ID].start_Node = True
+
     with open('../data/EDG_graph_node.pkl', 'wb') as f:
         pickle.dump(EDG_node, f)
-        
+
     return
 
 def build_end_Node_set():
@@ -309,7 +300,7 @@ def build_end_Node_set():
         end_Node_symantic.append('the MME sends a %s message'%m)
         end_Node_symantic.append('%s message is sent'%m)
         end_Node_symantic.append('send a %s message to the UE'%m)
-        
+
     get_embeddings(end_Node_symantic)
 
     def get_predict_pair():
@@ -319,11 +310,11 @@ def build_end_Node_set():
         for node_ID in EDG_node:
             if EDG_node[node_ID].cat == 'text':
                 for start_message in end_Node_symantic:
-                    to_predict_pair.append((node_ID, start_message))                    
+                    to_predict_pair.append((node_ID, start_message))
 
         return to_predict_pair
-    
-    
+
+
     def get_compare_result_md52result(from_pickle = False):
 
         def check_predict_and_probability(all_preds, all_probs, i):
@@ -344,13 +335,13 @@ def build_end_Node_set():
                     return True
 
             return False
-        
+
         compare_result_md52result = {}
-        if from_pickle == True:            
+        if from_pickle == True:
             with open('../data/EDG_match_result.pkl', 'rb') as f:
                 compare_result_md52result = pickle.load(f)
                 print('previous record md5 cnt:', len(compare_result_md52result))
-        
+
         to_predict_pair_text_md52text = {}
         for node_ID, text2 in to_predict_pair:
             text1 = EDG_node[node_ID].content_text
@@ -365,7 +356,7 @@ def build_end_Node_set():
         all_label = list()
         for md5 in to_predict_pair_text_md52text:
             sent_1_text, sent_2_text = to_predict_pair_text_md52text[md5]
-            
+
             id_2_text_pair_md5[cnt] = md5
             cnt += 1
             id_2_text_pair_md5[cnt] = md5
@@ -378,7 +369,7 @@ def build_end_Node_set():
             cated_emb = np.concatenate([emb1, emb0], axis=-1)
             all_input.append(cated_emb)
             all_label.append(0)
-         
+
         print('Done: load to input to be predicted')
 
         if len(all_input) > 0:
@@ -413,12 +404,12 @@ def build_end_Node_set():
             all_preds = np.concatenate(all_preds,0)
 
             print('Done: finish predict')
-           
+
             for i in range(0, len(all_preds), 2):
                 md5 = id_2_text_pair_md5[i]
                 compare_result_md52result[md5] = False
                 if check_predict_and_probability(all_preds, all_probs, i) == True:
-                    compare_result_md52result[md5] = True            
+                    compare_result_md52result[md5] = True
 
         with open('../data/EDG_match_result.pkl', 'wb') as f:
             pickle.dump(compare_result_md52result, f)
@@ -437,12 +428,12 @@ def build_end_Node_set():
     for node_ID, text2 in to_predict_pair:
         text1 = EDG_node[node_ID].content_text
         md5 = ccy.get_md5(text1 + text2)
-        if compare_result_md52result[md5] == True and include_message(text1, message_UE_to_network):
-            EDG_node[node_ID].end_Node = True            
-       
+        if compare_result_md52result[md5] == True:
+            EDG_node[node_ID].end_Node = True
+
     with open('../data/EDG_graph_node.pkl', 'wb') as f:
         pickle.dump(EDG_node, f)
-        
+
     return
 
 
@@ -457,15 +448,15 @@ def get_Node_ID(text):
         to_predict_pair = []
         for node_ID in EDG_node:
             if EDG_node[node_ID].cat == 'text':
-                to_predict_pair.append((node_ID, text)) 
+                to_predict_pair.append((node_ID, text))
 
         return to_predict_pair
-    
+
     def get_compare_result_md52result(from_pickle = False):
 
         def check_predict_and_probability(all_preds, all_probs, i):
 
-            threshold_1 = 0.58
+            threshold_1 = 0.69
             threshold_23 = 0.9
 
             if all_preds[i] == 1 and all_preds[i+1] == 1:
@@ -481,13 +472,13 @@ def get_Node_ID(text):
                     return True
 
             return False
-        
+
         compare_result_md52result = {}
-        if from_pickle == True:            
+        if from_pickle == True:
             with open('../data/EDG_match_result.pkl', 'rb') as f:
                 compare_result_md52result = pickle.load(f)
                 print('previous record md5 cnt:', len(compare_result_md52result))
-        
+
         to_predict_pair_text_md52text = {}
         for node_ID, text2 in to_predict_pair:
             text1 = EDG_node[node_ID].content_text
@@ -502,7 +493,7 @@ def get_Node_ID(text):
         all_label = list()
         for md5 in to_predict_pair_text_md52text:
             sent_1_text, sent_2_text = to_predict_pair_text_md52text[md5]
-            
+
             id_2_text_pair_md5[cnt] = md5
             cnt += 1
             id_2_text_pair_md5[cnt] = md5
@@ -515,7 +506,7 @@ def get_Node_ID(text):
             cated_emb = np.concatenate([emb1, emb0], axis=-1)
             all_input.append(cated_emb)
             all_label.append(0)
-         
+
         print('Done: load to input to be predicted')
 
         if len(all_input) > 0:
@@ -550,12 +541,12 @@ def get_Node_ID(text):
             all_preds = np.concatenate(all_preds,0)
 
             print('Done: finish predict')
-           
+
             for i in range(0, len(all_preds), 2):
                 md5 = id_2_text_pair_md5[i]
                 compare_result_md52result[md5] = False
                 if check_predict_and_probability(all_preds, all_probs, i) == True:
-                    compare_result_md52result[md5] = True            
+                    compare_result_md52result[md5] = True
 
         with open('../data/EDG_match_result.pkl', 'wb') as f:
             pickle.dump(compare_result_md52result, f)
@@ -584,7 +575,7 @@ def get_Node_ID(text):
 
 
 def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
-   
+
     with open('../data/EDG_graph_node.pkl', 'rb') as f:
         EDG_node = pickle.load(f)
     with open('../data/EDG_graph_edge.pkl', 'rb') as f:
@@ -593,8 +584,8 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
 
     if flag4 == True:
 
-        sent_1_text = 'UE shall consider EPS security context valid'
-        sent_2_text = 'the UE shall take the EPS security context indicated in the message into use'
+        sent_1_text = 'sending a SECURITY MODE COMMAND message to the UE'
+        sent_2_text = 'send a SECURITY MODE COMMAND message to the UE'
         print(sent_1_text)
         print(sent_2_text)
 
@@ -672,33 +663,311 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
 
             if all_preds[i] == 3 and all_preds[i+1] == 2:
                 if all_probs[i][3] >= threshold_23 and all_probs[i+1][2] >= threshold_23:
-                    return True            
+                    return True
 
             return False
 
         if check_predict_and_probability(all_preds, all_probs, 0) == True:
             print(True)
         else:
-            print(False)      
+            print(False)
+
+
+
+def rebuild_graph_connection():
+    global EDG_node
+    global EDG_edge
+
+    with open('../data/EDG_graph_node.pkl', 'rb') as f:
+        EDG_node = pickle.load(f)
+    with open('../data/EDG_graph_edge.pkl', 'rb') as f:
+        EDG_edge = pickle.load(f)
+
+    '''
+    print(EDG_edge[205].__dict__.items())
+    print(EDG_edge[7994].__dict__.items())
+    print(EDG_edge[204].__dict__.items())
+    print(EDG_edge[5655].__dict__.items())
+    print(EDG_edge[62].__dict__.items())
+    print(EDG_edge[26306].__dict__.items())
+    print(EDG_edge[1317].__dict__.items())
+    print(EDG_edge[1318].__dict__.items())
+    print(EDG_edge[1320].__dict__.items())
+
+    print(EDG_node[2084].__dict__.items())
+    print(EDG_node[2087].__dict__.items())
+    '''
+
+    # self.ID = ID
+    # self.weight = weight
+    # self.in_Node_ID = in_Node_ID
+    # self.out_Node_ID = out_Node_ID
+    gE, fE = dict(), dict()
+    for e in EDG_edge.values():
+        u, v = e.in_Node_ID, e.out_Node_ID
+
+        if not u in gE:
+            gE[u] = list()
+        gE[u].append((e.ID, v))
+        if not v in fE:
+            fE[v] = list()
+        fE[v].append((e.ID, u))
+
+    return gE, fE
+
+
+def find_invocation_route(node, fE, flag):
+    q = queue.Queue()
+    q.put(node)
+
+    visit = dict()
+
+    st_nodes = list()
+    act_edges = list()
+    while not q.empty():
+        v = q.get()
+        visit[v] = 2
+
+        if EDG_node[v].start_Node == True:
+            st_nodes.append(v)
+            continue
+
+        if not v in fE:
+            continue
+
+        m = 0
+        for e, u in fE[v]:
+            if not u in flag:
+                continue
+            if EDG_node[u].f < 1:
+                continue
+            if EDG_node[u].dist_st >= EDG_node[v].dist_st:
+                continue
+            m += EDG_edge[e].weight
+            act_edges.append(e)
+            if not u in visit:
+                q.put(u)
+                visit[u] = 1
+            if m >= EDG_node[v].weight:
+                break
+
+    return st_nodes, act_edges
+
+
+def find_observation_route(node, gE, flag):
+    q = queue.Queue()
+    q.put(node)
+
+    visit = dict()
+
+    obs_nodes = list()
+    act_edges = list()
+    while not q.empty():
+        u = q.get()
+        visit[u] = 2
+
+        if EDG_node[u].end_Node == True:
+            obs_nodes.append(u)
+            continue
+
+        if not u in gE:
+            continue
+
+        # m = 0
+        for e, v in gE[u]:
+            if not v in flag:
+                continue
+            if EDG_node[v].f < 1:
+                continue
+            # if EDG_node[v].dist_st <= EDG_node[u].dist_st:
+            #    continue
+            # m += EDG_edge[e].weight
+            act_edges.append(e)
+            if not v in visit:
+                q.put(v)
+                visit[v] = 1
+
+    return obs_nodes, act_edges
+
+
+
+
+
+def forward_search(st_nodes, gE, thr, visit=None, return_flag=False):
+    q = queue.Queue()
+    for u in st_nodes:
+        EDG_node[u].msg = EDG_node[u].weight
+        EDG_node[u].dist_st = 0
+        q.put(u)
+
+    obs_list = list()
+    flag = dict()
+    while not q.empty():
+        u = q.get()
+        flag[u] = 2
+
+        if EDG_node[u].end_Node == True:
+            obs_list.append(u)
+
+        if EDG_node[u].msg >= EDG_node[u].weight:
+            EDG_node[u].f = 1
+        else:
+            EDG_node[u].f = 0
+            continue
+
+        if not u in gE:
+            continue
+
+        for e, v in gE[u]:
+            if visit is not None and not v in visit:
+                continue
+            if EDG_edge[e].weight < thr:
+                continue
+            if not hasattr(EDG_node[v], "msg"):
+                EDG_node[v].msg = 0
+            EDG_node[v].msg += EDG_edge[e].weight
+
+            if EDG_node[v].msg >= EDG_node[v].weight:
+                if not hasattr(EDG_node[v], "dist_st"):
+                    EDG_node[v].dist_st = EDG_node[u].dist_st+1
+                if not v in flag:
+                    flag[v] = 1
+                    q.put(v)
+
+    if return_flag:
+        return obs_list, flag
+    return obs_list
+
+
+
+def observable(node, thr=0.5):
+    gE, fE = rebuild_graph_connection()
+
+    # node_weight = EDG_node[node].weight
+    # EDG_node[node].weight = len(EDG_edge)+1
+
+    st_nodes = [node]
+    for no in EDG_node.values():
+        if no.start_Node == True:
+            st_nodes.append(no.ID)
+    st_nodes = [node]
+
+    _, flag = forward_search(st_nodes, gE, thr, visit=None, return_flag=True)
+
+
+    '''
+    def_obs = dict()
+    for no in EDG_node.values():
+        if hasattr(no,'f') and no.f == 1 and no.end_Node == True:
+            def_obs[no.ID] = 1
+
+    EDG_node[node].weight = node_weight
+    _, flag = forward_search([node], gE, thr, visit=None, return_flag=True)
+    '''
+
+    _obs_nodes, _act_edges = find_observation_route(node, gE, flag)
+
+    '''
+    _obs_nodes = list()
+    for o in obs_nodes:
+        if o in def_obs:
+            continue
+        _obs_nodes.append(o)
+    '''
+    _obs_nodes.sort()
+    print(_obs_nodes)
+    # print(_act_edges)
+
+    # for e in _act_edges:
+    #     print(EDG_edge[e].in_Node_ID, '->', EDG_edge[e].out_Node_ID)
+
+
+def invocable(ids, thr=1):
+    gE, fE = rebuild_graph_connection()
+
+    # for nid in EDG_node:
+        # EDG_node[nid].start_Node =False
+
+    q = queue.Queue()
+    for i in ids:
+        q.put(i)
+
+    st_nodes = list()
+    visit = dict()
+    while not q.empty():
+        v = q.get()
+
+        if EDG_node[v].start_Node == True and not v in visit:
+            st_nodes.append(v)
+
+        visit[v] = True
+        if EDG_node[v].start_Node == True:
+            continue
+
+        if not v in fE:
+            continue
+
+        for e, u in fE[v]:
+            if EDG_edge[e].weight < thr:
+                continue
+            if not u in visit:
+                q.put(u)
+
+
+    # print(st_nodes)
+    # exit(0)
+
+    _, flag = forward_search(st_nodes, gE, thr, visit=visit, return_flag=True)
+
+    print(EDG_node[1168].__dict__.items())
+    print(EDG_node[1167].__dict__.items())
+    print(EDG_node[1166].__dict__.items())
+    print(fE[1166])
+    print(EDG_node[1170].__dict__.items())
+    for i in ids:
+        if hasattr(EDG_node[i], "f") and EDG_node[i].f > 0:
+            print(i)
+
+    _st_nodes, _act_edges = find_invocation_route(ids[0], fE, flag)
+    print(_st_nodes)
+    print(_act_edges)
+
+    for e in _act_edges:
+        print(EDG_edge[e].in_Node_ID, '->', EDG_edge[e].out_Node_ID)
+
+
+
+
+
 
 
 
 if __name__ == '__main__':
 
-    preparation()
+    #preparation()
 
-    #for k,v in EDG_node[2084].__dict__.items():
-    #    print(k,v)
+    #build_start_Node_set()
+    #build_end_Node_set()
 
-    build_start_Node_set()
-    build_end_Node_set()
+    # SR_condition_text = 'the encryption of NAS messages has been started between the MME and the UE'
+    # SR_result_text = 'the UE shall start timer T3402'
 
-    #for k,v in EDG_node[2084].__dict__.items():
-    #    print(k,v)
+    # SR_condition_text = 'UE is required to delete an eKSI'
 
-    #SR_condition_text = 'the encryption of NAS messages has been started between the MME and the UE'
-    #SR_result_text = 'the UE shall start timer T3402'
+    # node_ID_list = get_Node_ID(SR_condition_text)
+    # node_ID_list = [72] 
+    # node_ID_list = [85]
+    # node_ID_list = [79]
+    # node_ID_list = [2373]
+    # node_ID_list = [333]
+    # node_ID_list = [335]
+    # node_ID_list = [6230]
+    # node_ID_list = [6280]
+    # invocable(node_ID_list)
 
-    #get_Node_ID(SR_condition_text)
+    # node_ID = 2204
+    # node_ID = 2217
+    node_ID = 6278
+    observable(node_ID)
 
     #debug(False, False, False, True)

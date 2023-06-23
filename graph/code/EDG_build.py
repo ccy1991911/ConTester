@@ -29,9 +29,9 @@ class Node():
 
         self.ID = ID
         self.weight = weight
-        self.cat = cat
+        self.cat = cat # 'text', 'AND'
         self.condition_or_result = condition_or_result
-        self.content_text = content_text
+        self.content_text = content_text 
         self.sent_text = sent_text
         self.start_Node = start_Node
         self.end_Node = end_Node
@@ -59,7 +59,7 @@ EDG_node = {}
 EDG_edge = {}
 def build_EDG_for_only_causal_relation():
 
-    # from condition_result_for_sentences.pickle
+    # from condition_result_for_sentences.pickle    
     dic_md5 = {}
     with open('../data/condition_result_for_sentences.pickle', 'rb') as f:
         dic_md5 = pickle.load(f)
@@ -78,16 +78,16 @@ def build_EDG_for_only_causal_relation():
                     condition_Node_ID = create_Node(0, 'text', 'condition', condition_text, sent_text)
                     result_Node_ID = create_Node(1, 'text', 'result', result, sent_text)
                     create_Edge(1, condition_Node_ID, result_Node_ID)
-
+                    
                 else:
-
+                    
                     and_Node_ID = create_Node(len(conditions), 'AND')
                     result_Node_ID = create_Node(1, 'text', 'result', result, sent_text)
                     create_Edge(1, and_Node_ID, result_Node_ID)
-
+                    
                     for condition_text, introducer_word in conditions:
                         condition_Node_ID = create_Node(0, 'text', 'condition', condition_text, sent_text)
-                        create_Edge(1, condition_Node_ID, and_Node_ID)
+                        create_Edge(1, condition_Node_ID, and_Node_ID)                
 
                         if introducer_word == 'by':
                             condition_Node_ID = create_Node(0, 'text', 'condition', result, sent_text)
@@ -143,10 +143,10 @@ def build_EDG_with_model(from_pickle):
             pickle.dump(dic_text_2_embedding, f)
 
         return dic_text_2_embedding
-
+    
     def get_predict_pair_node_ID():
-
-        to_predict_pair_node_ID = []
+        
+        to_predict_pair_node_ID = [] 
         for node_result_ID in EDG_node:
             if EDG_node[node_result_ID].condition_or_result != 'result':
                 continue
@@ -182,7 +182,7 @@ def build_EDG_with_model(from_pickle):
             return False
 
         compare_result_md52result = {}
-        if from_pickle == True:
+        if from_pickle == True:            
             with open('../data/EDG_match_result.pkl', 'rb') as f:
                 compare_result_md52result = pickle.load(f)
                 print('previous record md5 cnt:', len(compare_result_md52result))
@@ -194,7 +194,7 @@ def build_EDG_with_model(from_pickle):
             text_condition = EDG_node[node_condition_ID].content_text
             md5 = ccy.get_md5(text_result+text_condition)
             if md5 not in to_predict_pair_text_md52text and md5 not in compare_result_md52result:
-                to_predict_pair_text_md52text[md5] = (text_result, text_condition)
+                to_predict_pair_text_md52text[md5] = (text_result, text_condition)                
         print('to_predict_pair_text:', len(to_predict_pair_text_md52text))
 
         id_2_text_pair_md5 = {}
@@ -203,7 +203,7 @@ def build_EDG_with_model(from_pickle):
         all_label = list()
         for md5 in to_predict_pair_text_md52text:
             sent_1_text, sent_2_text = to_predict_pair_text_md52text[md5]
-
+            
             id_2_text_pair_md5[cnt] = md5
             cnt += 1
             id_2_text_pair_md5[cnt] = md5
@@ -216,7 +216,7 @@ def build_EDG_with_model(from_pickle):
             cated_emb = np.concatenate([emb1, emb0], axis=-1)
             all_input.append(cated_emb)
             all_label.append(0)
-
+         
         print('Done: load to input to be predicted')
 
         if len(all_input) > 0:
@@ -251,12 +251,12 @@ def build_EDG_with_model(from_pickle):
             all_preds = np.concatenate(all_preds,0)
 
             print('Done: finish predict')
-
+           
             for i in range(0, len(all_preds), 2):
                 md5 = id_2_text_pair_md5[i]
                 compare_result_md52result[md5] = False
                 if check_predict_and_probability(all_preds, all_probs, i) == True:
-                    compare_result_md52result[md5] = True
+                    compare_result_md52result[md5] = True            
 
         with open('../data/EDG_match_result.pkl', 'wb') as f:
             pickle.dump(compare_result_md52result, f)
@@ -273,14 +273,14 @@ def build_EDG_with_model(from_pickle):
     to_predict_pair_node_ID = get_predict_pair_node_ID()
     compare_result_md52result = get_compare_result_md52result(from_pickle)
 
-    for node_result_ID, node_condition_ID in to_predict_pair_node_ID:
+    for node_result_ID, node_condition_ID in to_predict_pair_node_ID:    
         text_result = EDG_node[node_result_ID].content_text
         text_condition = EDG_node[node_condition_ID].content_text
         md5 = ccy.get_md5(text_result+text_condition)
 
         if compare_result_md52result[md5] == True:
             create_Edge(1, node_result_ID, node_condition_ID)
-
+            
     with open('../data/EDG_graph_node.pkl', 'wb') as f:
             pickle.dump(EDG_node, f)
     with open('../data/EDG_graph_edge.pkl', 'wb') as f:
@@ -288,7 +288,7 @@ def build_EDG_with_model(from_pickle):
 
 
 def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
-
+   
     with open('../data/EDG_graph_node.pkl', 'rb') as f:
         EDG_node = pickle.load(f)
     with open('../data/EDG_graph_edge.pkl', 'rb') as f:
@@ -301,7 +301,7 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
             for ID in EDG_edge:
                 if EDG_edge[ID].in_Node_ID == AND_Node_ID:
                     return EDG_edge[ID].out_Node_ID
-
+                
             print('error')
 
         for ID in EDG_edge:
@@ -326,7 +326,7 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
                 print('\nin_text:', EDG_node[in_Node_ID].content_text)
                 print('\nout_text:', EDG_node[next_Node_ID].content_text)
                 print('\nin_source:', EDG_node[in_Node_ID].sent_text)
-                print('\nout_source:', EDG_node[next_Node_ID].sent_text)
+                print('\nout_source:', EDG_node[next_Node_ID].sent_text)   
 
     def get_edge_text(ID):
         in_Node_ID = EDG_edge[ID].in_Node_ID
@@ -339,12 +339,12 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
 
 
     def query1(sent_text):
-
+    
         for ID in EDG_edge:
             in_text, out_text = get_edge_text(ID)
             if in_text == out_text and in_text == sent_text:
                 return ID
-
+        
         return None
 
     def query2(in_Node_ID, out_Node_ID):
@@ -352,7 +352,7 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
         for ID in EDG_edge:
             if EDG_edge[ID].in_Node_ID == in_Node_ID and EDG_edge[ID].out_Node_ID == out_Node_ID:
                 return ID
-
+            
         return None
 
     if flag1 == True:
@@ -454,20 +454,20 @@ def debug(flag1 = False, flag2 = False, flag3 = False, flag4 = False):
 
             if all_preds[i] == 3 and all_preds[i+1] == 2:
                 if all_probs[i][3] >= threshold_23 and all_probs[i+1][2] >= threshold_23:
-                    return True
+                    return True            
 
             return False
 
         if check_predict_and_probability(all_preds, all_probs, 0) == True:
             print(True)
         else:
-            print(False)
+            print(False)      
 
 
 
 if __name__ == '__main__':
 
     build_EDG_for_only_causal_relation()
-    build_EDG_with_model(False)
-    #debug(True, False, True, False)
+    build_EDG_with_model(True)
+    #debug(True, False, False, False)
     print('Done all code')
