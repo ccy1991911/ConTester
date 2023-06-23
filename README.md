@@ -19,7 +19,8 @@ Please enter the folder **code** and run the following command to train the mode
 ```python
 sh batch_train.sh
 ````
-Please run the following command to get the EDG.
+Please run the following command to get the EDG and do some preparation for DP.
 ```python
 python EDG_build.py
+python EDG_DP_0.py
 ```
