@@ -949,13 +949,35 @@ if __name__ == '__main__':
     #build_start_Node_set()
     #build_end_Node_set()
 
+    invokeble = {
+        1: 'UE is required to delete an eKSI',
+        2: 'When a partial native EPS security context is taken into use through a security mode control procedure',
+        3: 'When the MME and the UE create an EPS security context using null integrity and null ciphering algorithm during an attach procedure for emergency bearer services, or a tracking area updating procedure for a UE that has a PDN connection for emergency bearer services, the MME and the UE shall delete the previous current EPS security context.',
+        4: 'the UE initiates the attach procedure',
+        7: 'the secure exchange of NAS messages has been established',
+        9: 'the encryption of NAS messages has been started between the MME and the UE',
+        13: 'start timer T3402',
+    }
+
+    observable = {
+        1: 'the UE shall take the EPS security context into use',
+        13: 'start timer T3402',
+        14: 'start timer T3247',
+        16: 'accpet SECURITY MODE COMMAND message',
+        18: 'start timer T3346',
+    }
+
+
+
     # SR_condition_text = 'the encryption of NAS messages has been started between the MME and the UE'
     # SR_result_text = 'the UE shall start timer T3402'
 
     # SR_condition_text = 'UE is required to delete an eKSI'
 
+    SR_condition_text = invokeble[1]
+
     # node_ID_list = get_Node_ID(SR_condition_text)
-    # node_ID_list = [72] 
+    # node_ID_list = [72]
     # node_ID_list = [85]
     # node_ID_list = [79]
     # node_ID_list = [2373]
@@ -964,6 +986,8 @@ if __name__ == '__main__':
     # node_ID_list = [6230]
     # node_ID_list = [6280]
     # invocable(node_ID_list)
+
+    SR_result_text = observable[1]
 
     # node_ID = 2204
     # node_ID = 2217
