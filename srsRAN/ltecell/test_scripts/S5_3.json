@@ -1,0 +1,57 @@
+﻿[
+    {
+        "Step": 1,
+        "Message": "ATTACH_REQUEST",
+        "Replayed": 0,
+        "Parameter": [902011234567890]
+    },
+    {
+        "Step": 2,
+        "Message": "IDENTITY_REQUEST",
+        "Replayed": 0,
+        "Parameter": [1]
+    },
+    {
+        "Step": 3,
+        "Message": "AUTHENTICATION_REQUEST",
+        "Replayed": 0,
+        "Parameter": [0]
+    },
+    {
+        "Step": 4,
+        "Message": "SECURITY_MODE_COMMAND",
+        "Replayed": 1,
+        "Parameter": [3]
+    },
+    {
+        "Step": 5,
+        "Message": "ESM_INFORMATION_REQUEST",
+        "Replayed": 0,
+        "Parameter": [2]
+    },
+    {
+        "Step": 6,
+        "Message": "ATTACH_ACCEPT",
+        "Replayed": 0,
+        "Parameter": [2]
+    },
+    {
+        "Step": 7,
+        "Message": "EMM_INFORMATION",
+        "Replayed": 0,
+        "Parameter": [2]
+    },
+    {
+        "Step": 8,
+        "Message": "REPLAYED_MESSAGE",
+        "Replayed": 0,
+        "Parameter": [0]
+    },
+    {
+        "Step": 0,
+        "Message": "AUTHENTICATION_RESPONSE",
+        "Replayed": 0,
+        "Parameter": [30],
+        "Result": 1
+    }
+]

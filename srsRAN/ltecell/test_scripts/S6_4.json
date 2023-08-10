@@ -1,0 +1,27 @@
+﻿[
+    {
+        "Step": 1,
+        "Message": "ATTACH_REQUEST",
+        "Replayed": 0,
+        "Parameter": [902011234567890]
+    },
+    {
+        "Step": 2,
+        "Message": "IDENTITY_REQUEST",
+        "Replayed": 0,
+        "Parameter": [1]
+    },
+    {
+        "Step": 3,
+        "Message": "ESM_INFORMATION_REQUEST",
+        "Replayed": 0,
+        "Parameter": [2]
+    },
+    {
+        "Step": 0,
+        "Message": "ESM_INFORMATION_RESPONSE",
+        "Replayed": 0,
+        "Parameter": [30],
+        "Result": 1
+    }
+]
